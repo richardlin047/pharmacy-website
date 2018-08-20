@@ -1,4 +1,6 @@
 import React from 'react'
+
+import './stylesheets/Header.css'
 import { Link } from 'react-router-dom'
 import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap/lib';
 import { IndexLinkContainer, LinkContainer } from 'react-router-bootstrap';
@@ -6,7 +8,7 @@ import { IndexLinkContainer, LinkContainer } from 'react-router-bootstrap';
 // The Header creates links that can be used to navigate
 // between routes.
 const Header = () => (
-  <header>
+  <header id='header'>
     <Navbar inverse collapseOnSelect>
 	  <Navbar.Header>
 	    <Navbar.Brand>

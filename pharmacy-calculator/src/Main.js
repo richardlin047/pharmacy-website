@@ -1,6 +1,8 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom'
-import Home from './Home'
+import './stylesheets/Main.css'
+
+import HomeContainer from './HomeContainer'
 import About from './About'
 import Schedule from './Schedule'
 import CalculatorContainer from './CalculatorContainer'
@@ -11,9 +13,9 @@ import CalculatorContainer from './CalculatorContainer'
 // with /roster or /schedule. The / route will only match
 // when the pathname is exactly the string "/"
 const Main = () => (
-  <main>
+  <main id='main'>
     <Switch>
-      <Route exact path='/' component={Home}/>
+      <Route exact path='/' component={HomeContainer}/>
       <Route path='/about' component={About}/>
       <Route path='/schedule' component={Schedule}/>
       <Route path='/calculator' component={CalculatorContainer}/>

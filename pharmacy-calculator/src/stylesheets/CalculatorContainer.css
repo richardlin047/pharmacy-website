@@ -1,0 +1,30 @@
+/*input {
+	outline: 0;
+}*/
+
+.ivLabel {
+	/*font-size: 20px;*/
+	min-width: 80px;
+	margin-right: 5px;
+}
+
+.colCenter {
+	float: none;
+	margin: 0 auto;
+}
+
+.ivInput {
+	outline: 0;
+	border-width: 0 0 2px;
+	max-width: 80px;
+	margin-right: 5px;
+}
+
+.conversionInput {
+	display: block;
+	width: 100%;
+}
+
+.conversionBtns {
+	margin-bottom: 20px;
+}

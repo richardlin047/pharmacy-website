@@ -1,15 +1,15 @@
-import React, { Component } from "react";
-// import './HomeContainer.css';
+import React from 'react'
+import './stylesheets/HomeContainer.css';
 
-class HomeContainer extends Component {
-	render() {
-		return (
-			 <div>
-			 	<h1>This is the Home Page!</h1>
-			 </div>   
-		);
-	}
-}
+import pillsBg from './asset/pillsBg.jpg';
+import { Button } from 'react-bootstrap/lib';
 
-export default HomeContainer;
+const HomeContainer = () => (
+  <div>
+    <h1>Welcome to Pharmacy Paradise!</h1>
+    <img src={pillsBg} alt="bg" className="bg" />
+    <button className={'btn btn-lg btn-danger'}>This is a button!</button>
+  </div>
+)
 
+export default HomeContainer
